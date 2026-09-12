@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d0b" />
+    <meta name="description" content="Alan Varghese — Wildlife Photographer from Kerala, India." />
+    <title>Alan Varghese — Wildlife Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="intro" id="intro" aria-label="Alan Wildlife Photography introduction">
+      <div class="intro-orbit" aria-hidden="true"></div>
+      <img class="intro-mark" src="assets/images/alan-wildlife-photography.png" alt="Alan Wildlife Photography" />
+      <p class="intro-caption">Kerala, India <span>—</span> Wildlife in stillness</p>
+      <button class="skip-intro" type="button" id="skip-intro">Enter</button>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#home" aria-label="Alan Wildlife Photography home">
+        <img src="assets/images/alan-wildlife-photography.png" alt="Alan Wildlife Photography" />
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-label">Menu</span><span class="menu-lines" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#stories">Stories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home" aria-label="Opening image">
+        <div class="hero-pin" id="hero-pin">
+          <div class="hero-backdrop" aria-hidden="true"></div>
+          <div class="hero-vignette" aria-hidden="true"></div>
+          <p class="eyebrow hero-index">01 <span>/</span> THE QUIET BEFORE</p>
+          <div class="hero-image-wrap" id="hero-image-wrap">
+            <img class="hero-image" src="assets/images/tiger.jpg" alt="Tiger walking towards the camera" fetchpriority="high" />
+          </div>
+          <div class="hero-copy" id="hero-copy">
+            <p class="eyebrow">Alan Varghese <span>/</span> Wildlife Photographer</p>
+            <h1>Where<br /><em>the wild</em><br />looks back.</h1>
+          </div>
+          <div class="hero-bottom">
+            <p>Kerala, India</p>
+            <a href="#gallery" class="scroll-invite"><span class="scroll-line" aria-hidden="true"></span> Begin the journey</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="opening-note section-pad" aria-labelledby="opening-heading">
+        <div class="section-rule"></div>
+        <p class="eyebrow">02 <span>/</span> AN INVITATION TO LOOK</p>
+        <h2 id="opening-heading">The natural world does not perform.<br /><em>It simply unfolds.</em></h2>
+        <p class="opening-detail reveal">Observation asks for time. These photographs are a record of the pause before a moment becomes a memory.</p>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+        <div class="gallery-heading section-pad">
+          <p class="eyebrow">03 <span>/</span> SELECTED WORKS</p>
+          <h2 id="gallery-heading">A living<br /><em>archive.</em></h2>
+          <p>Each frame holds its own pace. Take yours.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="photo-item photo-butterfly tilt-item" type="button" data-image="assets/images/butterfly.jpg" data-alt="Black and white butterfly resting on leaves" data-title="Study in stillness">
+            <span class="image-shell"><img src="assets/images/butterfly.jpg" alt="Black and white butterfly resting on leaves" loading="lazy" /></span>
+            <span class="photo-meta"><span>01</span><span>Study in stillness</span><span class="view-mark">View</span></span>
+          </button>
+          <button class="photo-item photo-peacock tilt-item" type="button" data-image="assets/images/peacock.jpeg" data-alt="Peacock among dense green leaves" data-title="Within the canopy">
+            <span class="image-shell"><img src="assets/images/peacock.jpeg" alt="Peacock among dense green leaves" loading="lazy" /></span>
+            <span class="photo-meta"><span>02</span><span>Within the canopy</span><span class="view-mark">View</span></span>
+          </button>
+          <button class="photo-item photo-pigeons tilt-item" type="button" data-image="assets/images/pigeons.png" data-alt="Two pigeons facing one another against a dark backdrop" data-title="A quiet conversation">
+            <span class="image-shell"><img src="assets/images/pigeons.png" alt="Two pigeons facing one another against a dark backdrop" loading="lazy" /></span>
+            <span class="photo-meta"><span>03</span><span>A quiet conversation</span><span class="view-mark">View</span></span>
+          </button>
+          <button class="photo-item photo-heron tilt-item" type="button" data-image="assets/images/heron.jpg" data-alt="Bird with a catch held in its beak" data-title="The instinct to endure">
+            <span class="image-shell"><img src="assets/images/heron.jpg" alt="Bird with a catch held in its beak" loading="lazy" /></span>
+            <span class="photo-meta"><span>04</span><span>The instinct to endure</span><span class="view-mark">View</span></span>
+          </button>
+          <button class="photo-item photo-macaque tilt-item" type="button" data-image="assets/images/macaque.jpg" data-alt="Macaque looking directly at the camera" data-title="Returned gaze">
+            <span class="image-shell"><img src="assets/images/macaque.jpg" alt="Macaque looking directly at the camera" loading="lazy" /></span>
+            <span class="photo-meta"><span>05</span><span>Returned gaze</span><span class="view-mark">View</span></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="story-section" id="stories" aria-labelledby="stories-heading">
+        <div class="story-pin">
+          <div class="story-image-stage">
+            <img src="assets/images/leopard.png" alt="Leopard walking through shadow" loading="lazy" id="story-image" />
+            <div class="story-shade" aria-hidden="true"></div>
+          </div>
+          <div class="story-type" aria-hidden="true"><span>O</span><span>B</span><span>S</span><span>E</span><span>R</span><span>V</span><span>E</span></div>
+          <div class="story-content">
+            <p class="eyebrow">04 <span>/</span> WILDLIFE STORIES</p>
+            <h2 id="stories-heading">Wait for the<br /><em>unannounced.</em></h2>
+            <p class="story-body">Some encounters arrive quietly, then hold the entire world still. The camera follows after patience has done its work.</p>
+            <div class="story-caption"><span>Field note 01</span><span>Wildlife study</span></div>
+          </div>
+          <div class="story-steps" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="philosophy" aria-labelledby="philosophy-heading">
+        <div class="philosophy-image"><img src="assets/images/heron.jpg" alt="Bird with a catch held in its beak" loading="lazy" /></div>
+        <div class="philosophy-overlay"></div>
+        <div class="philosophy-copy">
+          <p class="eyebrow">05 <span>/</span> PHILOSOPHY</p>
+          <h2 id="philosophy-heading">“I don’t just photograph wildlife.<br /><em>I photograph the moments that make us stop and look.</em>”</h2>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-heading">
+        <div class="about-photo-wrap"><img src="assets/images/macaque.jpg" alt="Macaque looking directly at the camera" loading="lazy" /></div>
+        <div class="about-intro">
+          <p class="eyebrow">06 <span>/</span> THE PHOTOGRAPHER</p>
+          <h2 id="about-heading">Alan<br /><em>Varghese</em></h2>
+          <p class="about-role">Wildlife Photographer<br />Kerala, India</p>
+        </div>
+        <div class="about-copy">
+          <p>Alan Varghese is a wildlife photographer from Kerala, India, with a strong passion for observing and capturing wildlife through photography.</p>
+          <p>Photography, for me, is more than simply taking a picture. I enjoy photographs that carry a story, emotion, atmosphere, and meaning.</p>
+          <p>I try to capture wildlife naturally and authentically, preserving the feeling of the moment rather than relying on heavy manipulation.</p>
+          <p>I am passionate about wildlife photography, nature, visual storytelling, and observing the small details of the natural world.</p>
+        </div>
+        <div class="achievement">
+          <span class="achievement-kicker">Recognition</span>
+          <strong>Top 100</strong>
+          <span>WallMag Wildlife<br />Photography Award 2026</span>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-topline"></div>
+        <p class="eyebrow">07 <span>/</span> CONTINUE THE JOURNEY</p>
+        <h2 id="contact-heading">Follow the<br /><em>journey.</em></h2>
+        <a class="instagram-link" href="https://www.instagram.com/alan_wildlifephotography/" target="_blank" rel="noreferrer">@alan_wildlifephotography <span aria-hidden="true">↗</span></a>
+        <img class="contact-mark" src="assets/images/alan-wildlife-photography.png" alt="Alan Wildlife Photography" loading="lazy" />
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Alan Varghese</span>
+      <a href="#home">Back to top ↑</a>
+      <span>Wildlife Photography</span>
+    </footer>
+
+    <dialog class="photo-viewer" id="photo-viewer" aria-labelledby="viewer-title">
+      <button class="viewer-close" type="button" aria-label="Close photograph viewer">Close <span>×</span></button>
+      <div class="viewer-stage"><img id="viewer-image" src="" alt="" /></div>
+      <div class="viewer-caption"><span id="viewer-count">Selected work</span><strong id="viewer-title"></strong></div>
+    </dialog>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
